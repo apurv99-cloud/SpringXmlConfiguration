@@ -8,20 +8,22 @@
    
     <bean id="alien" class="com.karthik.demo.Alien">
       <!--We use property for setter injection to set the variable value of private variable-->
-     <property name="salary" value="21000"/>
+     <!-- <property name="salary" value="21000"/> -->
      
      <!--This we used when we are injecting into construtor-->
-     <constructor-arg index = "0" value = "21"/>
+     <!-- <constructor-arg index = "0" value = "21"/>
      <constructor-arg index = "1" ref = "lapp1"/>
      <constructor-arg index = "2" value = "2" />
-      
+       -->
       <!--We use property ke andar keyword named as ref and assign as apne dusre class ke bean ki id only if we want to inject OBJECT-->
-      <property name="lap" ref="lapp"/>
+      <property name="salary" value="21000"/>
+      <property name="com" ref="lap"/>
+
       
      
      </bean>
 
-    <bean id="lapp" class="com.karthik.demo.Laptop"/>
+    <bean id="lap" class="com.karthik.demo.Laptop"/>
     <bean id="lapp1" class="com.karthik.demo.Laptop"/>
 
 </beans>
