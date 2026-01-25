@@ -15,9 +15,10 @@
      <constructor-arg index = "1" ref = "lapp1"/>
      <constructor-arg index = "2" value = "2" />
        -->
+       <!-- The end of XMLConfiguration-->
       <!--We use property ke andar keyword named as ref and assign as apne dusre class ke bean ki id only if we want to inject OBJECT-->
       <property name="salary" value="21000"/>
-      <property name="com" ref="lap"/>
+      <property name="com" ref="lap"/> 
 
       
      
